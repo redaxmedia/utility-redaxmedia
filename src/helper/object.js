@@ -3,14 +3,14 @@
  *
  * @since 1.0.0
  *
- * @param dirtyObject object
+ * @param dirty object
  *
- * @return string
+ * @return object
  */
 
-function tidy(dirtyObject)
+function tidy(dirty)
 {
-	return JSON.parse(JSON.stringify(dirtyObject));
+	return JSON.parse(JSON.stringify(dirty));
 }
 
 module.exports =
