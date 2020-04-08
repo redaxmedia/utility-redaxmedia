@@ -7,9 +7,9 @@ let optionArray = {};
  *
  * @since 1.0.0
  *
- * @param name string
+ * @param {string} name
  *
- * @return string
+ * @return {string}
  */
 
 function get(name)
@@ -22,8 +22,10 @@ function get(name)
  *
  * @since 1.0.0
  *
- * @param name string
- * @param value string
+ * @param {string} name
+ * @param {string} value
+ *
+ * @return {void}
  */
 
 function set(name, value)
@@ -35,6 +37,8 @@ function set(name, value)
  * clear
  *
  * @since 1.0.0
+ *
+ * @return {void}
  */
 
 function clear()
@@ -47,7 +51,9 @@ function clear()
  *
  * @since 1.0.0
  *
- * @param initArray array
+ * @param {Array} initArray
+ *
+ * @return {void}
  */
 
 function init(initArray)
@@ -64,9 +70,9 @@ function init(initArray)
  *
  * @since 1.0.0
  *
- * @param relativePath string
+ * @param {string} relativePath
  *
- * @return object
+ * @return {object}
  */
 
 function construct(relativePath)

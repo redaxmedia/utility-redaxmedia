@@ -5,9 +5,9 @@ const os = require('os');
  *
  * @since 1.0.0
  *
- * @param content string
+ * @param {string} content
  *
- * @return object
+ * @return {object}
  */
 
 function parse(content)
@@ -27,11 +27,11 @@ function parse(content)
  *
  * @since 1.0.0
  *
- * @param data string
- * @param indent string
- * @param newline string
+ * @param {string} data
+ * @param {string} indent
+ * @param {string} newline
  *
- * @return string
+ * @return {string}
  */
 
 function stringify(data, indent = 2, newline)

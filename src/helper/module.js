@@ -5,9 +5,9 @@ const path = require('path');
  *
  * @since 1.0.0
  *
- * @param relativePath string
+ * @param {string} relativePath
  *
- * @return object
+ * @return {object}
  */
 
 function load(relativePath)
