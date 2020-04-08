@@ -27,16 +27,16 @@ function parse(content)
  *
  * @since 1.0.0
  *
- * @param {object} object
+ * @param {object} dataObject
  * @param {number|string} indent
  * @param {string} newline
  *
  * @return {string}
  */
 
-function stringify(object, indent = 2, newline)
+function stringify(dataObject, indent = 2, newline)
 {
-	const json = JSON.stringify(object, null, indent) + os.EOL;
+	const json = JSON.stringify(dataObject, null, indent) + os.EOL;
 	const pattern = new RegExp(os.EOL, 'g');
 
 	return newline ? json.replace(pattern, newline) : json;

@@ -3,14 +3,14 @@
  *
  * @since 1.0.0
  *
- * @param {object} object
+ * @param {object} originalObject
  *
  * @return {object}
  */
 
-function clone(object)
+function clone(originalObject)
 {
-	return Object.assign({}, object);
+	return Object.assign({}, originalObject);
 }
 
 /**
@@ -18,14 +18,14 @@ function clone(object)
  *
  * @since 1.0.0
  *
- * @param {object} object
+ * @param {object} dirtyObject
  *
  * @return {object}
  */
 
-function tidy(object)
+function tidy(dirtyObject)
 {
-	return JSON.parse(JSON.stringify(object));
+	return JSON.parse(JSON.stringify(dirtyObject));
 }
 
 module.exports =

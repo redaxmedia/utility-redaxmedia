@@ -1,6 +1,6 @@
 const helper = require('./helper');
 
-let optionArray = {};
+let optionObject= {};
 
 /**
  * get
@@ -14,7 +14,7 @@ let optionArray = {};
 
 function get(name)
 {
-	return optionArray[name];
+	return optionObject[name];
 }
 
 /**
@@ -30,7 +30,7 @@ function get(name)
 
 function set(name, value)
 {
-	optionArray[name] = value;
+	optionObject[name] = value;
 }
 
 /**
@@ -43,7 +43,7 @@ function set(name, value)
 
 function clear()
 {
-	optionArray = {};
+	optionObject = {};
 }
 
 /**
@@ -51,17 +51,17 @@ function clear()
  *
  * @since 1.0.0
  *
- * @param {Array} initArray
+ * @param {object} initObject
  *
  * @return {void}
  */
 
-function init(initArray)
+function init(initObject)
 {
-	optionArray =
+	optionObject =
 	{
-		...optionArray,
-		...helper.object.tidy(initArray)
+		...optionObject,
+		...helper.object.tidy(initObject)
 	};
 }
 
@@ -85,7 +85,7 @@ function construct(relativePath)
 		init
 	};
 
-	optionArray = helper.module.load(relativePath);
+	optionObject = helper.module.load(relativePath);
 	return exports;
 }
 
