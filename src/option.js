@@ -1,6 +1,6 @@
 const helper = require('./helper');
 
-let optionObject= {};
+let optionObject = {};
 
 /**
  * get

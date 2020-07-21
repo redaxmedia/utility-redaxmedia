@@ -1,7 +1,7 @@
 {
 	"name": "utility-redaxmedia",
 	"description": "A boring collection of utilities and helpers",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"license": "MIT",
 	"keywords":
 	[
@@ -24,8 +24,8 @@
 	},
 	"devDependencies":
 	{
-		"eslint": "6.8.0",
-		"eslint-config-redaxmedia": "2.0.0"
+		"eslint": "7.5.0",
+		"eslint-config-redaxmedia": "2.1.0"
 	},
 	"scripts":
 	{
